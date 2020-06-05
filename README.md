@@ -7,5 +7,7 @@ The main data processing workflow is as follows:
 * create a `job` that runs `tasks` to process each input file in the `pool` using a basic command
 
 `BatchProcessor` - manages the creation and deletion of a `pool`, executes and monitors `job`s
+
 `BatchPool` - facilitates the configuration, creation, and mangement of a `pool` of VMs.
+
 `BatchJob` - creates jobs, adds `tasks` to the `job`, monitors the `job` and queues failed jobs for retry at a later time. A `task` is simply a Linux command line command.
